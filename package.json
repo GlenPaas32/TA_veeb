@@ -1,0 +1,27 @@
+{
+  "name": "ta_veeb",
+  "version": "1.0.0",
+  "description": "ta ruhma veebiprogrammeerimise veeb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://glenpaas32@github.com/GlenPaas32/TA_veeb.git"
+  },
+  "keywords": [
+    "tallina",
+    "ulikool",
+    "node.js"
+  ],
+  "author": "Glen Paas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GlenPaas32/TA_veeb/issues"
+  },
+  "homepage": "https://github.com/GlenPaas32/TA_veeb#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
