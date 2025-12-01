@@ -13,10 +13,11 @@
 	<li><a href="/">Avaleht</a></li>
 	</ul>
 	<hr>
-	<h2>AJAINFO</h2>
+	<h2><%= heading %></h2>
 	<ul>
-		<li>Nädalapäev: <%= weekDayNow %></li>
-		<li>Kuupäev: <%= dateNow %></li>
+		<% listData.forEach(function(listItem){ %>
+			<li><%= listItem %></li>
+		<% });%>
 	</ul>
 </body>
 

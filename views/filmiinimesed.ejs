@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Glen Paas</title>
+</head>
+<body>
+	<img src="../images/test.jpg" alt="Kursuse bänner">
+	<h1>Veebileht,</h1>
+	<p>mis sisaldab tõsiseltvöetavat</p>
+	<hr>
+	<ul>
+	<li><a href="/">Avaleht</a></li>
+	<li><a href="/Eestifilm">EESTI FILM</a></li>
+	</ul>
+	<hr>
+	<h2>Eesti filmiinimesed</h2>
+	<ol>
+		<% personList.forEach(function(listItem){ %>
+			<li><%= listItem.first_name %> <%= listItem.last_name %>, sündinud <%= listItem.born %></li>
+		<% });%>
+	</ol>
+</body>
+
+</html>

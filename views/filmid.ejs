@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Glen Paas</title>
+</head>
+<body>
+	<img src="../images/test.jpg" alt="Kursuse bänner">
+	<h1>Veebileht,</h1>
+	<p>mis sisaldab tõsiseltvöetavat</p>
+	<hr>
+	<ul>
+	<li><a href="/">Avaleht</a></li>
+	<li><a href="/Eestifilm">EESTI FILM</a></li>
+	</ul>
+	<hr>
+	<h2>Eesti filmid</h2>
+	<p>Lisa uus film</p>
+	<form method="POST">
+	  <label for="titleInput">Filmi nimi</label>
+	  <input id="titleInput" name="titleInput" type="text" placeholder="Filmi nimi" required>
+	  <br>
+	  <label for="yearInput">Filmi aasta</label>
+	  <input id="yearInput" name="yearInput" type="number" placeholder="Filmi aasta" required>
+	  <br>
+	  <label for="durationInput">Filmi kestus</label>
+	  <input id="durationInput" name="durationInput" type="number" placeholder="Filmi kestus" required>
+	  <br>
+	  <input id="personSubmit" name="personSubmit" type="submit" value="Salvesta">
+	  <p>Staatus: <%= notice %></p>
+	  <hr>
+	<ol>
+		<% movieList.forEach(function(listItem){ %>
+			<li><%= listItem.title %> (<%= listItem.production_year %>)</li>
+		<% });%>
+	</ol>
+</body>
+
+</html>

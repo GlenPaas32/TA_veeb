@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Glen Paas</title>
+</head>
+<body>
+	<img src="../images/test.jpg" alt="Kursuse bänner">
+	<h1>Veebileht,</h1>
+	<p>mis sisaldab tõsiseltvöetavat</p>
+	<hr>
+	<ul>
+	<li><a href="/">Avaleht</a></li>
+	<li><a href="/Eestifilm">EESTI FILM</a></li>
+	</ul>
+	<hr>
+	<h2>Eesti filmiinimeste lisamine</h2>
+	<form method="POST">
+	  <label for="firstNameInput">Filmiinimese eesnimi</label>
+	  <input id="firstNameInput" name="firstNameInput" type="text" placeholder="Eesnimi..." required>
+	  <br>
+	  <label for="lastNameInput">Filmiinimese perekonnanimi</label>
+	  <input id="lastNameInput" name="lastNameInput" type="text" placeholder="Perekonnanimi..." required>
+	  <br>
+	  <label for="bornInput">Filmiinimese sünniaeg</label>
+	  <input id="bornInput" name="bornInput" type="date" required>
+	  <br>
+	  <label for="deceasedInput">Filmiinimese surmaaeg</label>
+	  <input id="deceasedInput" name="deceasedInput" type="date">
+	  <br>
+	  <input id="personSubmit" name="personSubmit" type="submit" value="Salvesta">
+	</form>
+	<p>Staatus: <%= notice %></p>
+</body>
+
+</html>

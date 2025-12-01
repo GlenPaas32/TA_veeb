@@ -1,25 +1,24 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="utf-8">
-  <title>lepaas, veebiprogrammeerimine</title>
-  <script> src="esimene.js" ;defer</script>
+	<meta charset="utf-8">
+	<title>Glen Paas</title>
 </head>
 <body>
-  <img src="vp_banner_2025_TA.jpg" alt="kuruse bänner">
-<h1>Lepaas, veebiprogrammeerimine</h1>
-<p>See leht on loodud <a href="https://www.tlu.ee"> Tallinna Ülikoolis </a> 
-veebiprogrammeerimise kuruse jaoks ja see ei sisalda tähtsat infot</p>
-<ul>
-  <li><a href="/"Avaleht></a></li>
-</ul>
-  <hr>
-  <h2>Ajainfo</h2>
-  <ul>
-    <li>Nädalapäev:</li>
-    <li>Kuupäev:</li>
-  
-  </ul>
-</body>  
+	<img src="images/test.jpg" alt="Kursuse bänner">
+	<h1>Veebileht,</h1>
+	<p>mis sisaldab tõsiseltvöetavat <a href="https://taflheim.io/">sisu</a>!</p>
+	<hr>
+	<ul>
+	<li><a href="/">Avaleht</a></li>
+	</ul>
+	<hr>
+	<h2><%= heading %></h2>
+	<ul>
+		<% listData.forEach(function(listItem){ %>
+			<li><%= listItem %></li>
+		<% });%>
+	</ul>
+</body>
 
 </html>
